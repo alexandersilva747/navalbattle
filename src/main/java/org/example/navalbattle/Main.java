@@ -2,6 +2,8 @@ package org.example.navalbattle;
 
 import javafx.application.Application;
 import javafx.stage.Stage;
+import org.example.navalbattle.views.GameView;
+import org.example.navalbattle.views.InstructionsView;
 import org.example.navalbattle.views.WelcomeView;
 
 import java.io.IOException;
