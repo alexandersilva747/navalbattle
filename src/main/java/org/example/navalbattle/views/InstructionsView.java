@@ -1,4 +1,4 @@
 package org.example.navalbattle.views;
 
-public class GameView {
+public class InstructionsView {
 }
