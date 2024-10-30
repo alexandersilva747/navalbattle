@@ -12,7 +12,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.navalbattle.controllers.GameController">
    <children>
       <GridPane layoutX="296.0" layoutY="195.0" prefHeight="423.0" prefWidth="363.0" style="-fx-border-color: black;">
         <columnConstraints>
@@ -497,7 +497,7 @@
             <Font size="16.0" />
          </font>
       </Button>
-      <Label alignment="TOP_CENTER" layoutX="306.0" layoutY="14.0" prefHeight="79.0" prefWidth="397.0" text="Naval Battle">
+      <Label alignment="TOP_CENTER" layoutX="298.0" layoutY="14.0" prefHeight="79.0" prefWidth="397.0" text="Naval Battle">
          <font>
             <Font name="Comic Sans MS Bold" size="61.0" />
          </font>
@@ -521,5 +521,9 @@
             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff1f1f" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.rowIndex="2" />
          </children>
       </GridPane>
+      <Label fx:id="nicknameLabel" layoutX="706.0" layoutY="46.0" prefHeight="55.0" prefWidth="326.0">
+         <font>
+            <Font name="Comic Sans MS Bold" size="19.0" />
+         </font></Label>
    </children>
 </AnchorPane>
