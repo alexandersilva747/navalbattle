@@ -8,14 +8,15 @@ public class Draggable {
     private double mouseAnchorY;
 
     public void makeDraggable(Node node) {
+
         node.setOnMousePressed(event -> {
-            mouseAnchorX = event.getSceneX();
-            mouseAnchorY = event.getSceneY();
+            mouseAnchorX = event.getSceneX() - node.getLayoutX();
+            mouseAnchorY = event.getSceneY() - node.getLayoutY();
         });
 
         node.setOnMouseDragged(event -> {
-            node.setLayoutX(mouseAnchorX - event.getSceneX());
-            node.setLayoutY(mouseAnchorY - event.getSceneY());
+            node.setLayoutX(event.getSceneX() - mouseAnchorX);
+            node.setLayoutY(event.getSceneY() - mouseAnchorY);
         });
     }
 }

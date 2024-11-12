@@ -2,6 +2,7 @@ package org.example.navalbattle.controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.shape.Rectangle;
 import org.example.navalbattle.model.Player;
@@ -9,7 +10,7 @@ import org.example.navalbattle.model.Player;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class GameController {
+public class GameController implements Initializable {
     //control entre logica y vista
     private Player player;
 
@@ -520,20 +521,11 @@ public class GameController {
     }
     Draggable draggable=new Draggable();
 
-
-    public void initialize(URL url, ResourceBundle rb)
-    {
-        draggable.makeDraggable(aircraft);
-        draggable.makeDraggable(destroyer);
-        draggable.makeDraggable(destroyer2);
-        draggable.makeDraggable(destroyer3);
-        draggable.makeDraggable(frigate);
-        draggable.makeDraggable(frigate2);
-        draggable.makeDraggable(frigate3);
-        draggable.makeDraggable(frigate4);
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
         draggable.makeDraggable(submarine);
-        draggable.makeDraggable(submarine2);
     }
+
 
 
 
