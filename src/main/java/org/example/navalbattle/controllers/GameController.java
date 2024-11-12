@@ -545,7 +545,7 @@ public class GameController {
     }
 
     public void setNicknameToLabel(String nickname) {
-         this.nicknameLabel.setText("Welcome " + nickname+ " !");
+         this.nicknameLabel.setText("Welcome " + nickname +"!");
     }
 }
 
