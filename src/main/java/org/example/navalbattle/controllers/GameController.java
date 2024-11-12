@@ -537,7 +537,7 @@ public class GameController implements Initializable {
     }
 
     public void setNicknameToLabel(String nickname) {
-         this.nicknameLabel.setText("Welcome " + nickname+ " !");
+         this.nicknameLabel.setText("Welcome " + nickname +"!");
     }
 }
 
