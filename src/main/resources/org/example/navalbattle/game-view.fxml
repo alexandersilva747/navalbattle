@@ -1,529 +1,592 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.paint.LinearGradient?>
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.navalbattle.controllers.GameController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1400.0" stylesheets="@styles/game.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.navalbattle.controllers.GameController">
    <children>
-      <GridPane layoutX="296.0" layoutY="195.0" prefHeight="423.0" prefWidth="363.0" style="-fx-border-color: black;">
-        <columnConstraints>
-          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-        </columnConstraints>
-        <rowConstraints>
-          <RowConstraints fillHeight="false" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-        </rowConstraints>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
          <children>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="1" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.rowIndex="1" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="2" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="3" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="4" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.rowIndex="2" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="4" GridPane.rowIndex="2" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="5" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="5" GridPane.rowIndex="1" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="5" GridPane.rowIndex="2" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="6" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="6" GridPane.rowIndex="1" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="7" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="8" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="7" GridPane.rowIndex="1" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="9" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="9" GridPane.rowIndex="1" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="8" GridPane.rowIndex="1" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="6" GridPane.rowIndex="2" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="7" GridPane.rowIndex="2" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="8" GridPane.rowIndex="2" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="9" GridPane.rowIndex="2" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.rowIndex="3" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="5" GridPane.rowIndex="3" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="6" GridPane.rowIndex="3" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="7" GridPane.rowIndex="3" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="8" GridPane.rowIndex="3" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="9" GridPane.rowIndex="3" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.rowIndex="4" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="4" GridPane.rowIndex="4" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="5" GridPane.rowIndex="4" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="6" GridPane.rowIndex="4" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="7" GridPane.rowIndex="4" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="8" GridPane.rowIndex="4" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="9" GridPane.rowIndex="4" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.rowIndex="5" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="4" GridPane.rowIndex="5" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="5" GridPane.rowIndex="5" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="6" GridPane.rowIndex="5" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="7" GridPane.rowIndex="5" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="8" GridPane.rowIndex="5" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="9" GridPane.rowIndex="5" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.rowIndex="6" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="3" GridPane.rowIndex="6" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="4" GridPane.rowIndex="6" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="5" GridPane.rowIndex="6" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="6" GridPane.rowIndex="6" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="7" GridPane.rowIndex="6" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="8" GridPane.rowIndex="6" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="9" GridPane.rowIndex="6" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.rowIndex="7" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="3" GridPane.rowIndex="7" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="4" GridPane.rowIndex="7" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="5" GridPane.rowIndex="7" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="6" GridPane.rowIndex="7" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="7" GridPane.rowIndex="7" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="8" GridPane.rowIndex="7" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="9" GridPane.rowIndex="7" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.rowIndex="8" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="3" GridPane.rowIndex="8" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="4" GridPane.rowIndex="8" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="5" GridPane.rowIndex="8" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="6" GridPane.rowIndex="8" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="7" GridPane.rowIndex="8" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="8" GridPane.rowIndex="8" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="9" GridPane.rowIndex="8" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.rowIndex="9" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="3" GridPane.rowIndex="9" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="4" GridPane.rowIndex="9" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="5" GridPane.rowIndex="9" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="6" GridPane.rowIndex="9" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="7" GridPane.rowIndex="9" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="8" GridPane.rowIndex="9" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="9" GridPane.rowIndex="9" />
+            <VBox alignment="CENTER" prefHeight="100.0" prefWidth="700.0">
+               <children>
+                  <Label alignment="BOTTOM_LEFT" prefHeight="28.0" prefWidth="686.0" styleClass="tittle" stylesheets="@styles/game.css" text=" NAVAL BATTLE" textAlignment="CENTER">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <Label fx:id="nicknameLabel" alignment="CENTER" prefHeight="55.0" prefWidth="326.0" styleClass="text" textAlignment="CENTER" underline="true" wrapText="true">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="19.0" />
+               </font>
+            </Label>
+            <VBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="700.0">
+               <children>
+                  <Button alignment="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="286.0" text="Game Instructions" textAlignment="CENTER" />
+               </children>
+               <HBox.margin>
+                  <Insets right="100.0" />
+               </HBox.margin>
+            </VBox>
          </children>
-      </GridPane>
-      <GridPane gridLinesVisible="true" layoutX="765.0" layoutY="197.0" prefHeight="423.0" prefWidth="372.0" style="-fx-border-color: black;">
-         <columnConstraints>
-            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-         </columnConstraints>
-         <rowConstraints>
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-         </rowConstraints>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="520.0" prefWidth="1400.0">
          <children>
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine3" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="2" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine4" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="3" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine5" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="4" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine6" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="5" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine1" prefHeight="37.0" prefWidth="31.0" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine7" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="6" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine2" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="1" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine8" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="7" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine9" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="8" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine10" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="9" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine11" prefHeight="37.0" prefWidth="31.0" GridPane.rowIndex="1" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine12" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine13" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine20" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="9" GridPane.rowIndex="1" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine18" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="7" GridPane.rowIndex="1" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine17" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="6" GridPane.rowIndex="1" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine16" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="5" GridPane.rowIndex="1" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine15" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine14" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine19" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="8" GridPane.rowIndex="1" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine21" prefHeight="37.0" prefWidth="31.0" GridPane.rowIndex="2" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine37" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="6" GridPane.rowIndex="3" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine36" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="5" GridPane.rowIndex="3" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine35" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine34" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine33" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine32" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine31" prefHeight="37.0" prefWidth="31.0" GridPane.rowIndex="3" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine30" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="9" GridPane.rowIndex="2" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine29" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="8" GridPane.rowIndex="2" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine28" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="7" GridPane.rowIndex="2" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine27" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="6" GridPane.rowIndex="2" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine26" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="5" GridPane.rowIndex="2" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine25" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="4" GridPane.rowIndex="2" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine24" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine23" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine22" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine49" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="8" GridPane.rowIndex="4" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine48" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="7" GridPane.rowIndex="4" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine47" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="6" GridPane.rowIndex="4" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine46" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="5" GridPane.rowIndex="4" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine45" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="4" GridPane.rowIndex="4" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine44" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine43" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine42" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine41" prefHeight="37.0" prefWidth="31.0" GridPane.rowIndex="4" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine40" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="9" GridPane.rowIndex="3" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine39" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="8" GridPane.rowIndex="3" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine38" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="7" GridPane.rowIndex="3" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine65" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="4" GridPane.rowIndex="6" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine55" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="4" GridPane.rowIndex="5" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine91" prefHeight="37.0" prefWidth="31.0" GridPane.rowIndex="9" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine81" prefHeight="37.0" prefWidth="31.0" GridPane.rowIndex="8" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine71" prefHeight="37.0" prefWidth="31.0" GridPane.rowIndex="7" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine61" prefHeight="37.0" prefWidth="31.0" GridPane.rowIndex="6" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine52" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine51" prefHeight="37.0" prefWidth="31.0" GridPane.rowIndex="5" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine50" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="9" GridPane.rowIndex="4" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine94" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="3" GridPane.rowIndex="9" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine84" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="3" GridPane.rowIndex="8" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine74" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="3" GridPane.rowIndex="7" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine64" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="3" GridPane.rowIndex="6" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine54" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine93" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine92" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine83" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine82" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine73" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine72" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine63" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine62" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine53" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine77" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="6" GridPane.rowIndex="7" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine67" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="6" GridPane.rowIndex="6" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine57" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="6" GridPane.rowIndex="5" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine96" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="5" GridPane.rowIndex="9" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine86" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="5" GridPane.rowIndex="8" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine76" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="5" GridPane.rowIndex="7" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine66" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="5" GridPane.rowIndex="6" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine56" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="5" GridPane.rowIndex="5" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine95" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="4" GridPane.rowIndex="9" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine85" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="4" GridPane.rowIndex="8" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine75" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="4" GridPane.rowIndex="7" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine89" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="8" GridPane.rowIndex="8" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine88" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="7" GridPane.rowIndex="8" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine80" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="9" GridPane.rowIndex="7" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine79" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="8" GridPane.rowIndex="7" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine78" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="7" GridPane.rowIndex="7" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine70" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="9" GridPane.rowIndex="6" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine69" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="8" GridPane.rowIndex="6" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine60" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="9" GridPane.rowIndex="5" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine59" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="8" GridPane.rowIndex="5" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine68" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="7" GridPane.rowIndex="6" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine58" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="7" GridPane.rowIndex="5" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine97" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="6" GridPane.rowIndex="9" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine87" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="6" GridPane.rowIndex="8" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine100" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="9" GridPane.rowIndex="9" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine99" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="8" GridPane.rowIndex="9" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine98" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="7" GridPane.rowIndex="9" />
-            <Button mnemonicParsing="false" onAction="#buttonBoardMachine90" prefHeight="37.0" prefWidth="31.0" GridPane.columnIndex="9" GridPane.rowIndex="8" />
+            <VBox alignment="CENTER" prefHeight="520.0" prefWidth="300.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="41.0" prefWidth="300.0" styleClass="dis" stylesheets="@styles/game.css" text="Naval Fleet" textFill="#030303" underline="true">
+                     <font>
+                        <Font name="Comic Sans MS" size="16.0" />
+                     </font>
+                  </Label>
+                  <GridPane alignment="CENTER" prefHeight="467.0" prefWidth="300.0">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="120.0" minWidth="10.0" prefWidth="104.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="146.0" minWidth="10.0" prefWidth="146.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Rectangle fx:id="aircraft" arcHeight="5.0" arcWidth="5.0" height="40.0" stroke="BLACK" strokeType="INSIDE" width="134.0" GridPane.columnIndex="1">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </Rectangle>
+                        <Rectangle fx:id="submarine" arcHeight="5.0" arcWidth="5.0" height="40.0" stroke="BLACK" strokeType="INSIDE" width="102.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </Rectangle>
+                        <Rectangle fx:id="submarine2" arcHeight="5.0" arcWidth="5.0" height="40.0" stroke="BLACK" strokeType="INSIDE" width="102.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </Rectangle>
+                        <Rectangle fx:id="destroyer" arcHeight="5.0" arcWidth="5.0" height="40.0" stroke="BLACK" strokeType="INSIDE" width="68.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </Rectangle>
+                        <Rectangle fx:id="destroyer2" arcHeight="5.0" arcWidth="5.0" height="40.0" stroke="BLACK" strokeType="INSIDE" width="68.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </Rectangle>
+                        <Rectangle fx:id="destroyer3" arcHeight="5.0" arcWidth="5.0" height="40.0" stroke="BLACK" strokeType="INSIDE" width="68.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </Rectangle>
+                        <Rectangle fx:id="frigate" arcHeight="5.0" arcWidth="5.0" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </Rectangle>
+                        <Rectangle fx:id="frigate2" arcHeight="5.0" arcWidth="5.0" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </Rectangle>
+                        <Rectangle fx:id="frigate3" arcHeight="5.0" arcWidth="5.0" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </Rectangle>
+                        <Rectangle fx:id="frigate4" arcHeight="5.0" arcWidth="5.0" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </Rectangle>
+                        <Label alignment="CENTER" prefHeight="36.0" prefWidth="111.0" styleClass="dis" text="Aircraft Carrier" textAlignment="CENTER" wrapText="true" />
+                        <Label alignment="CENTER" prefHeight="38.0" prefWidth="110.0" styleClass="dis" text="Submarine" textAlignment="CENTER" wrapText="true" GridPane.rowIndex="1" />
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="110.0" styleClass="dis" text="Submarine" textAlignment="CENTER" GridPane.rowIndex="2" />
+                        <Label alignment="CENTER" styleClass="button" text="Destroyer" textAlignment="CENTER" GridPane.rowIndex="3" />
+                        <Label alignment="CENTER" styleClass="button" text="Destroyer" textAlignment="CENTER" GridPane.rowIndex="4" />
+                        <Label alignment="CENTER" styleClass="button" text="Destroyer" textAlignment="CENTER" GridPane.rowIndex="5" />
+                        <Label alignment="CENTER" styleClass="button" text="Frigate" textAlignment="CENTER" GridPane.rowIndex="6" />
+                        <Label alignment="CENTER" styleClass="button" text="Frigate" textAlignment="CENTER" GridPane.rowIndex="7" />
+                        <Label alignment="CENTER" styleClass="button" text="Frigate" textAlignment="CENTER" GridPane.rowIndex="8" />
+                        <Label alignment="CENTER" styleClass="button" text="Frigate" textAlignment="CENTER" GridPane.rowIndex="9" />
+                     </children>
+                     <VBox.margin>
+                        <Insets top="2.0" />
+                     </VBox.margin>
+                  </GridPane>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="520.0" prefWidth="420.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="40.0" prefWidth="420.0" styleClass="dis" text="Player's Ships Board" textAlignment="CENTER" underline="true">
+                     <font>
+                        <Font name="Comic Sans MS" size="16.0" />
+                     </font>
+                  </Label>
+                  <GridPane alignment="CENTER" prefHeight="470.0" prefWidth="420.0" style="-fx-border-color: black; -fx-background-color: #6fa1d1;">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints fillHeight="false" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="1" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.rowIndex="1" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="2" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="3" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="4" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.rowIndex="2" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="5" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="6" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="7" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="8" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="9" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="9" GridPane.rowIndex="1" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="9" GridPane.rowIndex="2" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.rowIndex="3" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="8" GridPane.rowIndex="3" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="9" GridPane.rowIndex="3" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.rowIndex="4" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="8" GridPane.rowIndex="4" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="9" GridPane.rowIndex="4" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.rowIndex="5" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="8" GridPane.rowIndex="5" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="9" GridPane.rowIndex="5" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.rowIndex="6" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="7" GridPane.rowIndex="6" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="8" GridPane.rowIndex="6" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="9" GridPane.rowIndex="6" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.rowIndex="7" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="7" GridPane.rowIndex="7" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="8" GridPane.rowIndex="7" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="9" GridPane.rowIndex="7" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.rowIndex="8" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="5" GridPane.rowIndex="8" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="6" GridPane.rowIndex="8" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="7" GridPane.rowIndex="8" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="8" GridPane.rowIndex="8" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="9" GridPane.rowIndex="8" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.rowIndex="9" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="4" GridPane.rowIndex="9" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="5" GridPane.rowIndex="9" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="6" GridPane.rowIndex="9" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="7" GridPane.rowIndex="9" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="8" GridPane.rowIndex="9" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="9" GridPane.rowIndex="9" />
+                     </children>
+                  </GridPane>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="520.0" prefWidth="210.0">
+               <children>
+                  <Button alignment="TOP_CENTER" mnemonicParsing="false" prefHeight="15.0" prefWidth="180.0" styleClass="button_start" text="Start Game">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="50.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="TOP_CENTER" mnemonicParsing="false" prefHeight="15.0" prefWidth="180.0" styleClass="button_again" text="Fire" textFill="#171717">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="50.0" />
+                     </VBox.margin>
+                  </Button>
+                  <GridPane prefHeight="126.0" prefWidth="109.0">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label alignment="CENTER" prefHeight="32.0" prefWidth="75.0" style="-fx-background-color: #2300ff; -fx-border-color: black;" text="Water" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1" />
+                        <Label alignment="CENTER" prefHeight="32.0" prefWidth="75.0" styleClass="hit-tile" text="Hit" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label alignment="CENTER" prefHeight="30.0" prefWidth="74.0" styleClass="button_again" text="Sunk" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2300ff" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dcff1f" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.rowIndex="1" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff1f1f" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.rowIndex="2" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="50.0" />
+                     </VBox.margin>
+                  </GridPane>
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="40.0" prefWidth="180.0" text=" Machine Game Verification" textAlignment="CENTER" wrapText="true" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="520.0" prefWidth="420.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="40.0" prefWidth="420.0" styleClass="dis" text="Enemy Targeting Board" textAlignment="CENTER" textFill="#0b0303" underline="true">
+                     <font>
+                        <Font name="Comic Sans MS" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+                  <GridPane alignment="CENTER" gridLinesVisible="true" prefHeight="471.0" prefWidth="420.0" style="-fx-border-color: black; -fx-background-color: #6fa1d1;">
+                     <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine3" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="2" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine4" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="3" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine5" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="4" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine6" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="5" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine1" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine7" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="6" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine2" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="1" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine8" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="7" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine9" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="8" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine10" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="9" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine11" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.rowIndex="1" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine12" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine13" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine20" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="9" GridPane.rowIndex="1" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine18" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine17" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine16" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine15" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine14" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine19" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine21" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.rowIndex="2" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine37" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine36" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine35" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine34" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine33" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine32" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine31" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.rowIndex="3" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine30" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="9" GridPane.rowIndex="2" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine29" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine28" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine27" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine26" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine25" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine24" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine23" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine22" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine49" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="8" GridPane.rowIndex="4" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine48" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine47" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine46" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine45" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine44" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine43" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine42" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine41" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.rowIndex="4" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine40" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="9" GridPane.rowIndex="3" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine39" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="8" GridPane.rowIndex="3" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine38" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine65" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine55" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine91" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.rowIndex="9" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine81" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.rowIndex="8" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine71" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.rowIndex="7" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine61" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.rowIndex="6" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine52" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine51" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.rowIndex="5" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine50" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="9" GridPane.rowIndex="4" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine94" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine84" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine74" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine64" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine54" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine93" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine92" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine83" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine82" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine73" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine72" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine63" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine62" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine53" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine77" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine67" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine57" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine96" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="5" GridPane.rowIndex="9" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine86" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="5" GridPane.rowIndex="8" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine76" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine66" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine56" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine95" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="4" GridPane.rowIndex="9" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine85" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine75" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine89" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="8" GridPane.rowIndex="8" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine88" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="7" GridPane.rowIndex="8" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine80" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="9" GridPane.rowIndex="7" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine79" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="8" GridPane.rowIndex="7" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine78" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="7" GridPane.rowIndex="7" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine70" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="9" GridPane.rowIndex="6" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine69" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="8" GridPane.rowIndex="6" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine60" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="9" GridPane.rowIndex="5" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine59" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="8" GridPane.rowIndex="5" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine68" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="7" GridPane.rowIndex="6" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine58" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine97" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="6" GridPane.rowIndex="9" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine87" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="6" GridPane.rowIndex="8" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine100" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="9" GridPane.rowIndex="9" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine99" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="8" GridPane.rowIndex="9" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine98" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="7" GridPane.rowIndex="9" />
+                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine90" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="9" GridPane.rowIndex="8" />
+                     </children>
+                  </GridPane>
+               </children>
+            </VBox>
          </children>
-      </GridPane>
-      <Label alignment="TOP_CENTER" layoutX="415.0" layoutY="158.0" prefHeight="31.0" prefWidth="164.0" text="Player's Ships Board" textAlignment="CENTER">
-         <font>
-            <Font name="Comic Sans MS" size="16.0" />
-         </font>
-      </Label>
-      <Label alignment="TOP_CENTER" layoutX="859.0" layoutY="162.0" prefHeight="21.0" prefWidth="175.0" text="Enemy Targeting Board">
-         <font>
-            <Font name="Comic Sans MS" size="16.0" />
-         </font>
-      </Label>
-      <Button alignment="TOP_CENTER" layoutX="691.0" layoutY="389.0" mnemonicParsing="false" style="-fx-background-color: red;" text="Fire" textFill="#171717">
-         <font>
-            <Font size="16.0" />
-         </font>
-      </Button>
-      <GridPane layoutX="24.0" layoutY="133.0" prefHeight="478.0" prefWidth="250.0">
-        <columnConstraints>
-            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="120.0" minWidth="10.0" prefWidth="104.0" />
-          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="146.0" minWidth="10.0" prefWidth="146.0" />
-        </columnConstraints>
-        <rowConstraints>
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-        </rowConstraints>
-         <children>
-            <Rectangle fx:id="aircraft" arcHeight="5.0" arcWidth="5.0" height="40.0" stroke="BLACK" strokeType="INSIDE" width="134.0" GridPane.columnIndex="1">
-               <fill>
-                  <LinearGradient endX="1.0" endY="1.0">
-                     <stops>
-                        <Stop>
-                           <color>
-                              <Color />
-                           </color>
-                        </Stop>
-                        <Stop offset="1.0">
-                           <color>
-                              <Color red="1.0" green="1.0" blue="1.0" />
-                           </color>
-                        </Stop>
-                     </stops>
-                  </LinearGradient>
-               </fill></Rectangle>
-            <Rectangle fx:id="submarine" arcHeight="5.0" arcWidth="5.0" height="40.0" stroke="BLACK" strokeType="INSIDE" width="102.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
-               <fill>
-                  <LinearGradient endX="1.0" endY="1.0">
-                     <stops>
-                        <Stop>
-                           <color>
-                              <Color />
-                           </color>
-                        </Stop>
-                        <Stop offset="1.0">
-                           <color>
-                              <Color red="1.0" green="1.0" blue="1.0" />
-                           </color>
-                        </Stop>
-                     </stops>
-                  </LinearGradient>
-               </fill></Rectangle>
-            <Rectangle fx:id="submarine2" arcHeight="5.0" arcWidth="5.0" height="40.0" stroke="BLACK" strokeType="INSIDE" width="102.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
-               <fill>
-                  <LinearGradient endX="1.0" endY="1.0">
-                     <stops>
-                        <Stop>
-                           <color>
-                              <Color />
-                           </color>
-                        </Stop>
-                        <Stop offset="1.0">
-                           <color>
-                              <Color red="1.0" green="1.0" blue="1.0" />
-                           </color>
-                        </Stop>
-                     </stops>
-                  </LinearGradient>
-               </fill></Rectangle>
-            <Rectangle fx:id="destroyer" arcHeight="5.0" arcWidth="5.0" height="40.0" stroke="BLACK" strokeType="INSIDE" width="68.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
-               <fill>
-                  <LinearGradient endX="1.0" endY="1.0">
-                     <stops>
-                        <Stop>
-                           <color>
-                              <Color />
-                           </color>
-                        </Stop>
-                        <Stop offset="1.0">
-                           <color>
-                              <Color red="1.0" green="1.0" blue="1.0" />
-                           </color>
-                        </Stop>
-                     </stops>
-                  </LinearGradient>
-               </fill></Rectangle>
-            <Rectangle fx:id="destroyer2" arcHeight="5.0" arcWidth="5.0" height="40.0" stroke="BLACK" strokeType="INSIDE" width="68.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
-               <fill>
-                  <LinearGradient endX="1.0" endY="1.0">
-                     <stops>
-                        <Stop>
-                           <color>
-                              <Color />
-                           </color>
-                        </Stop>
-                        <Stop offset="1.0">
-                           <color>
-                              <Color red="1.0" green="1.0" blue="1.0" />
-                           </color>
-                        </Stop>
-                     </stops>
-                  </LinearGradient>
-               </fill></Rectangle>
-            <Rectangle fx:id="destroyer3" arcHeight="5.0" arcWidth="5.0" height="40.0" stroke="BLACK" strokeType="INSIDE" width="68.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
-               <fill>
-                  <LinearGradient endX="1.0" endY="1.0">
-                     <stops>
-                        <Stop>
-                           <color>
-                              <Color />
-                           </color>
-                        </Stop>
-                        <Stop offset="1.0">
-                           <color>
-                              <Color red="1.0" green="1.0" blue="1.0" />
-                           </color>
-                        </Stop>
-                     </stops>
-                  </LinearGradient>
-               </fill></Rectangle>
-            <Rectangle fx:id="frigate" arcHeight="5.0" arcWidth="5.0" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
-               <fill>
-                  <LinearGradient endX="1.0" endY="1.0">
-                     <stops>
-                        <Stop>
-                           <color>
-                              <Color />
-                           </color>
-                        </Stop>
-                        <Stop offset="1.0">
-                           <color>
-                              <Color red="1.0" green="1.0" blue="1.0" />
-                           </color>
-                        </Stop>
-                     </stops>
-                  </LinearGradient>
-               </fill></Rectangle>
-            <Rectangle fx:id="frigate2" arcHeight="5.0" arcWidth="5.0" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
-               <fill>
-                  <LinearGradient endX="1.0" endY="1.0">
-                     <stops>
-                        <Stop>
-                           <color>
-                              <Color />
-                           </color>
-                        </Stop>
-                        <Stop offset="1.0">
-                           <color>
-                              <Color red="1.0" green="1.0" blue="1.0" />
-                           </color>
-                        </Stop>
-                     </stops>
-                  </LinearGradient>
-               </fill></Rectangle>
-            <Rectangle fx:id="frigate3" arcHeight="5.0" arcWidth="5.0" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="1" GridPane.rowIndex="8">
-               <fill>
-                  <LinearGradient endX="1.0" endY="1.0">
-                     <stops>
-                        <Stop>
-                           <color>
-                              <Color />
-                           </color>
-                        </Stop>
-                        <Stop offset="1.0">
-                           <color>
-                              <Color red="1.0" green="1.0" blue="1.0" />
-                           </color>
-                        </Stop>
-                     </stops>
-                  </LinearGradient>
-               </fill></Rectangle>
-            <Rectangle fx:id="frigate4" arcHeight="5.0" arcWidth="5.0" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.columnIndex="1" GridPane.rowIndex="9">
-               <fill>
-                  <LinearGradient endX="1.0" endY="1.0">
-                     <stops>
-                        <Stop>
-                           <color>
-                              <Color />
-                           </color>
-                        </Stop>
-                        <Stop offset="1.0">
-                           <color>
-                              <Color red="1.0" green="1.0" blue="1.0" />
-                           </color>
-                        </Stop>
-                     </stops>
-                  </LinearGradient>
-               </fill></Rectangle>
-            <Label alignment="CENTER" text="Aircraft Carrier" textAlignment="CENTER" />
-            <Label alignment="CENTER" text="Submarine" textAlignment="CENTER" GridPane.rowIndex="1" />
-            <Label alignment="CENTER" text="Submarine" textAlignment="CENTER" GridPane.rowIndex="2" />
-            <Label alignment="CENTER" text="Destroyer" textAlignment="CENTER" GridPane.rowIndex="3" />
-            <Label alignment="CENTER" text="Destroyer" textAlignment="CENTER" GridPane.rowIndex="4" />
-            <Label alignment="CENTER" text="Destroyer" textAlignment="CENTER" GridPane.rowIndex="5" />
-            <Label alignment="CENTER" text="Frigate" textAlignment="CENTER" GridPane.rowIndex="6" />
-            <Label alignment="CENTER" text="Frigate" textAlignment="CENTER" GridPane.rowIndex="7" />
-            <Label alignment="CENTER" text="Frigate" textAlignment="CENTER" GridPane.rowIndex="8" />
-            <Label alignment="CENTER" text="Frigate" textAlignment="CENTER" GridPane.rowIndex="9" />
-         </children>
-      </GridPane>
-      <Label alignment="TOP_CENTER" layoutX="102.0" layoutY="99.0" prefHeight="31.0" prefWidth="94.0" text="Naval Fleet">
-         <font>
-            <Font name="Comic Sans MS" size="16.0" />
-         </font>
-      </Label>
-      <Button layoutX="946.0" layoutY="14.0" mnemonicParsing="false" text="Game Instructions" />
-      <Button layoutX="847.0" layoutY="626.0" mnemonicParsing="false" text="Machine Game Verification" />
-      <Button alignment="TOP_CENTER" layoutX="665.0" layoutY="145.0" mnemonicParsing="false" text="Start Game">
-         <font>
-            <Font size="16.0" />
-         </font>
-      </Button>
-      <Label alignment="TOP_CENTER" layoutX="298.0" layoutY="14.0" prefHeight="79.0" prefWidth="397.0" text="Naval Battle">
-         <font>
-            <Font name="Comic Sans MS Bold" size="61.0" />
-         </font>
-      </Label>
-      <GridPane layoutX="1138.0" layoutY="345.0" prefHeight="126.0" prefWidth="109.0">
-        <columnConstraints>
-          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-        </columnConstraints>
-        <rowConstraints>
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-        </rowConstraints>
-         <children>
-            <Label alignment="TOP_CENTER" text="Water" GridPane.columnIndex="1" />
-            <Label alignment="TOP_CENTER" text="Hit" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Label alignment="TOP_CENTER" text="Sunk" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2300ff" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dcff1f" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.rowIndex="1" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff1f1f" height="40.0" stroke="BLACK" strokeType="INSIDE" width="34.0" GridPane.rowIndex="2" />
-         </children>
-      </GridPane>
-      <Label fx:id="nicknameLabel" layoutX="706.0" layoutY="46.0" prefHeight="55.0" prefWidth="326.0">
-         <font>
-            <Font name="Comic Sans MS Bold" size="19.0" />
-         </font></Label>
+      </HBox>
    </children>
-</AnchorPane>
+</VBox>
