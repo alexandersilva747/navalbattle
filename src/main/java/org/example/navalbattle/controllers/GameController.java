@@ -5,7 +5,9 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.shape.Rectangle;
 import org.example.navalbattle.model.Player;
+import org.example.navalbattle.views.InstructionsView;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -546,6 +548,10 @@ public class GameController {
 
     public void setNicknameToLabel(String nickname) {
          this.nicknameLabel.setText("Welcome " + nickname +"!");
+    }
+
+    public void onActionGameInstructions (ActionEvent actionEvent) throws IOException{
+        InstructionsView.getInstance();
     }
 }
 
