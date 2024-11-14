@@ -79,7 +79,7 @@
 /* Estilo de las casillas de agua */
 .water-tile {
     -fx-background-color: blue;
-    -fx-background-image: url("ola.jpg");
+    -fx-background-image: url("../images/ola.jpg");
     -fx-background-size: cover;
     -fx-border-color: #000;
     -fx-border-width: 1px;
