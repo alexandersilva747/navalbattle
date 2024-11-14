@@ -405,7 +405,7 @@
             </VBox>
             <VBox alignment="CENTER" prefHeight="520.0" prefWidth="210.0">
                <children>
-                  <Button alignment="TOP_CENTER" mnemonicParsing="false" prefHeight="15.0" prefWidth="180.0" styleClass="button_start" text="Start Game">
+                  <Button alignment="TOP_CENTER" mnemonicParsing="false" onAction="#startGameButton" prefHeight="15.0" prefWidth="180.0" styleClass="button_start" text="Start Game">
                      <font>
                         <Font size="16.0" />
                      </font>
@@ -443,7 +443,7 @@
                         <Insets bottom="50.0" />
                      </VBox.margin>
                   </GridPane>
-                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="40.0" prefWidth="180.0" text=" Machine Game Verification" textAlignment="CENTER" wrapText="true" />
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#machineGameVerificationButton" prefHeight="40.0" prefWidth="180.0" text=" Machine Game Verification" textAlignment="CENTER" wrapText="true" />
                </children>
             </VBox>
             <VBox alignment="CENTER" prefHeight="520.0" prefWidth="420.0">
@@ -456,7 +456,7 @@
                         <Insets />
                      </VBox.margin>
                   </Label>
-                  <GridPane alignment="CENTER" gridLinesVisible="true" prefHeight="471.0" prefWidth="420.0" style="-fx-border-color: black; -fx-background-color: #6fa1d1;">
+                  <GridPane fx:id="boardGrid" alignment="CENTER" gridLinesVisible="true" prefHeight="471.0" prefWidth="420.0" style="-fx-border-color: black; -fx-background-color: #6fa1d1;">
                      <columnConstraints>
                         <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                         <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -481,108 +481,6 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                      </rowConstraints>
-                     <children>
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine3" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="2" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine4" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="3" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine5" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="4" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine6" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="5" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine1" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine7" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="6" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine2" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="1" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine8" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="7" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine9" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="8" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine10" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="9" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine11" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.rowIndex="1" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine12" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine13" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine20" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="9" GridPane.rowIndex="1" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine18" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="7" GridPane.rowIndex="1" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine17" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="6" GridPane.rowIndex="1" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine16" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="5" GridPane.rowIndex="1" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine15" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="4" GridPane.rowIndex="1" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine14" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine19" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="8" GridPane.rowIndex="1" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine21" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.rowIndex="2" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine37" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="6" GridPane.rowIndex="3" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine36" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="5" GridPane.rowIndex="3" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine35" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="4" GridPane.rowIndex="3" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine34" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine33" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine32" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine31" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.rowIndex="3" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine30" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="9" GridPane.rowIndex="2" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine29" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="8" GridPane.rowIndex="2" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine28" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="7" GridPane.rowIndex="2" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine27" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="6" GridPane.rowIndex="2" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine26" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="5" GridPane.rowIndex="2" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine25" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="4" GridPane.rowIndex="2" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine24" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine23" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine22" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine49" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="8" GridPane.rowIndex="4" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine48" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="7" GridPane.rowIndex="4" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine47" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="6" GridPane.rowIndex="4" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine46" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="5" GridPane.rowIndex="4" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine45" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="4" GridPane.rowIndex="4" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine44" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="3" GridPane.rowIndex="4" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine43" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine42" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine41" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.rowIndex="4" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine40" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="9" GridPane.rowIndex="3" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine39" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="8" GridPane.rowIndex="3" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine38" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="7" GridPane.rowIndex="3" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine65" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="4" GridPane.rowIndex="6" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine55" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="4" GridPane.rowIndex="5" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine91" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.rowIndex="9" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine81" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.rowIndex="8" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine71" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.rowIndex="7" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine61" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.rowIndex="6" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine52" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine51" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.rowIndex="5" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine50" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="9" GridPane.rowIndex="4" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine94" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="3" GridPane.rowIndex="9" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine84" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="3" GridPane.rowIndex="8" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine74" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="3" GridPane.rowIndex="7" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine64" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="3" GridPane.rowIndex="6" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine54" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="3" GridPane.rowIndex="5" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine93" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="2" GridPane.rowIndex="9" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine92" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="1" GridPane.rowIndex="9" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine83" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="2" GridPane.rowIndex="8" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine82" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="1" GridPane.rowIndex="8" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine73" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="2" GridPane.rowIndex="7" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine72" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="1" GridPane.rowIndex="7" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine63" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="2" GridPane.rowIndex="6" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine62" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine53" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="2" GridPane.rowIndex="5" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine77" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="6" GridPane.rowIndex="7" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine67" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="6" GridPane.rowIndex="6" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine57" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="6" GridPane.rowIndex="5" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine96" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="5" GridPane.rowIndex="9" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine86" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="5" GridPane.rowIndex="8" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine76" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="5" GridPane.rowIndex="7" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine66" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="5" GridPane.rowIndex="6" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine56" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="5" GridPane.rowIndex="5" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine95" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="4" GridPane.rowIndex="9" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine85" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="4" GridPane.rowIndex="8" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine75" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="4" GridPane.rowIndex="7" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine89" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="8" GridPane.rowIndex="8" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine88" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="7" GridPane.rowIndex="8" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine80" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="9" GridPane.rowIndex="7" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine79" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="8" GridPane.rowIndex="7" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine78" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="7" GridPane.rowIndex="7" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine70" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="9" GridPane.rowIndex="6" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine69" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="8" GridPane.rowIndex="6" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine60" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="9" GridPane.rowIndex="5" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine59" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="8" GridPane.rowIndex="5" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine68" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="7" GridPane.rowIndex="6" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine58" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="7" GridPane.rowIndex="5" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine97" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="6" GridPane.rowIndex="9" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine87" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="6" GridPane.rowIndex="8" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine100" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="9" GridPane.rowIndex="9" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine99" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="8" GridPane.rowIndex="9" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine98" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="7" GridPane.rowIndex="9" />
-                        <Button mnemonicParsing="false" onAction="#buttonBoardMachine90" prefHeight="37.0" prefWidth="31.0" styleClass="water-tile" GridPane.columnIndex="9" GridPane.rowIndex="8" />
-                     </children>
                   </GridPane>
                </children>
             </VBox>
