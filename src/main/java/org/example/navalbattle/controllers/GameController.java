@@ -30,9 +30,12 @@ public class GameController {
     @FXML
     private ToggleButton verticalHorizontal;
 
+
+
     private boolean isVertical = false;
 
     private TableroAliado tableroAliado;
+
 
 
 
@@ -57,9 +60,19 @@ public class GameController {
         // Inicializa el tablero con los contenedores correspondientes
         tableroAliado = new TableroAliado(contenedorBarco1, contenedorSubmarino1, contenedorAircraft1, contenedorDestroyer1, boardGridPane);
 
+
         // Mandar los objetos al tablero del aliado
         // Event handler para el ToggleButton
         updateToggleButtonText();
+
+//          Comprobación que va en en start button
+//        if (tableroAliado.todosLosBarcosColocados()) {
+//            System.out.println("La colocación de barcos está completa.");
+//            tableroAliado.imprimirPosicionesBarcos();
+//        } else {
+//            System.out.println("Aún quedan barcos por colocar.");
+//        }
+
     }
 
 
@@ -100,4 +113,5 @@ public class GameController {
     public void onActionGameInstructions (ActionEvent actionEvent) throws IOException{
         InstructionsView.getInstance();
     }
+
 }
