@@ -53,6 +53,16 @@ public class Figures extends Canvas {
         }
     }
 
+    // Metodo que devuelve la longitud del barco (en casillas)
+    public int getLength() {
+        return casillas;
+    }
+
+    // Metodo que devuelve el nombre del barco (tipo)
+    public String getName() {
+        return tipo;
+    }
+
     private void ajustarCanvas() {
 // Ajusta el ancho y el alto en función de la orientación y el número de casillas de cada tipo de barco
         if (isVertical) {
