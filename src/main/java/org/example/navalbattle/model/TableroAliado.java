@@ -14,8 +14,8 @@ public class TableroAliado {
     private int aircraftCount = 0;
     private int destroyerCount = 0;
 
-    private static final int CELL_WIDTH = 35;
-    private static final int CELL_HEIGHT = 40;
+    public static final int CELL_WIDTH = 35;
+    public static final int CELL_HEIGHT = 40;
     private static final int GRID_COLUMNS = 10;
     private static final int GRID_ROWS = 10;
 
@@ -57,8 +57,8 @@ public class TableroAliado {
             double localX = event.getX() - gridBounds.getMinX();
             double localY = event.getY() - gridBounds.getMinY();
 
-            int col = (int) (localX / CELL_WIDTH);
-            int row = (int) (localY / CELL_HEIGHT);
+            int col = (int) Math.floor(localX / CELL_WIDTH);
+            int row = (int) Math.floor(localY / CELL_HEIGHT);
 
             String barcoTipo = event.getDragboard().getString();
             int shipLength = getShipWidth(barcoTipo);
@@ -72,7 +72,6 @@ public class TableroAliado {
         }
         event.consume();
     }
-
     public void handleDragDropped(DragEvent event, boolean isVertical) {
         Dragboard db = event.getDragboard();
         boolean success = false;
@@ -82,42 +81,46 @@ public class TableroAliado {
             double localX = event.getX() - gridBounds.getMinX();
             double localY = event.getY() - gridBounds.getMinY();
 
-            int col = (int) (localX / CELL_WIDTH);
-            int row = (int) (localY / CELL_HEIGHT);
+            int col = (int) Math.floor(localX / CELL_WIDTH);
+            int row = (int) Math.floor(localY / CELL_HEIGHT);
 
             String barcoTipo = db.getString();
             int shipLength = getShipWidth(barcoTipo);
+
+            // Ajustar el tamaño real en función de las celdas y la longitud del barco
+            int shipWidth = isVertical ? 1 : shipLength;
+            int shipHeight = isVertical ? shipLength : 1;
 
             if (isValidPosition(col, row, shipLength, isVertical)) {
                 switch (barcoTipo) {
                     case "Barco":
                         if (fragataCount < 4) {
-                            figures fragata = new figures(CELL_WIDTH, CELL_HEIGHT, "fragata", isVertical);
-                            boardGridPane.add(fragata, col, row, isVertical ? 1 : shipLength, isVertical ? shipLength : 1);
+                            Figures fragata = new Figures(CELL_WIDTH, CELL_HEIGHT, "fragata", isVertical);
+                            boardGridPane.add(fragata, col, row, shipWidth, shipHeight); // Aquí usas shipWidth y shipHeight
                             fragataCount++;
                             success = true;
                         }
                         break;
                     case "Submarino":
                         if (submarinoCount < 2) {
-                            figures submarino = new figures(CELL_WIDTH * 3, CELL_HEIGHT, "submarino", isVertical);
-                            boardGridPane.add(submarino, col, row, isVertical ? 1 : shipLength, isVertical ? shipLength : 1);
+                            Figures submarino = new Figures(CELL_WIDTH, CELL_HEIGHT * 3, "submarino", isVertical);
+                            boardGridPane.add(submarino, col, row, shipWidth, shipHeight); // Aquí usas shipWidth y shipHeight
                             submarinoCount++;
                             success = true;
                         }
                         break;
                     case "Aircraft":
                         if (aircraftCount < 1) {
-                            figures aircraft = new figures(CELL_WIDTH * 4, CELL_HEIGHT, "aircraft", isVertical);
-                            boardGridPane.add(aircraft, col, row, isVertical ? 1 : shipLength, isVertical ? shipLength : 1);
+                            Figures aircraft = new Figures(CELL_WIDTH, CELL_HEIGHT * 4, "aircraft", isVertical);
+                            boardGridPane.add(aircraft, col, row, shipWidth, shipHeight); // Aquí usas shipWidth y shipHeight
                             aircraftCount++;
                             success = true;
                         }
                         break;
                     case "Destroyer":
                         if (destroyerCount < 3) {
-                            figures destroyer = new figures(CELL_WIDTH * 2, CELL_HEIGHT, "destroyer", isVertical);
-                            boardGridPane.add(destroyer, col, row, isVertical ? 1 : shipLength, isVertical ? shipLength : 1);
+                            Figures destroyer = new Figures(CELL_WIDTH, CELL_HEIGHT * 2, "destroyer", isVertical);
+                            boardGridPane.add(destroyer, col, row, shipWidth, shipHeight); // Aquí usas shipWidth y shipHeight
                             destroyerCount++;
                             success = true;
                         }
@@ -129,6 +132,8 @@ public class TableroAliado {
         event.setDropCompleted(success);
         event.consume();
     }
+
+
 
     private int getShipWidth(String barcoTipo) {
         return switch (barcoTipo) {

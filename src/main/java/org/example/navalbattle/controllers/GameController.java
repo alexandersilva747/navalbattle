@@ -9,11 +9,9 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 import org.example.navalbattle.model.TableroAliado;
 import org.example.navalbattle.model.Player;
-import org.example.navalbattle.model.figures;
+import org.example.navalbattle.model.Figures;
 import org.example.navalbattle.views.InstructionsView;
 import java.io.IOException;
-import java.net.URL;
-import java.util.ResourceBundle;
 
 public class GameController {
     private Player player;
@@ -39,28 +37,31 @@ public class GameController {
 
 
     public void initialize() {
-        // Inicializar una fragata
-        figures barco = new figures(150, 40, "fragata", isVertical); //Creación de una fragata en Pane, visualización en juego
+        // Inicializar una fragata con las dimensiones correspondientes
+        Figures barco = new Figures(50, 50, "fragata", isVertical);  // Usar tamaño basado en casillas
         contenedorBarco1.getChildren().add(barco);
 
-        // Inicializar un submarino
-        figures submarino = new figures(150, 40, "submarino", isVertical); //Creación submarino, visualizacion juego
+        // Inicializar un submarino con las dimensiones correspondientes
+        Figures submarino = new Figures(50 * 3, 50, "submarino", isVertical); // 3 casillas en horizontal
         contenedorSubmarino1.getChildren().add(submarino);
 
-        // Inicializar un avión
-        figures avion = new figures(150, 40, "aircraft", isVertical); //Creación portaaviones, visual
+
+        // Inicializar un avión con las dimensiones correspondientes
+        Figures avion = new Figures(50 * 4, 50, "aircraft", isVertical); // Usar tamaño basado en casillas
         contenedorAircraft1.getChildren().add(avion);
 
-        // Inicializar un destructor
-        figures destructor = new figures(150, 40, "destroyer", isVertical); //Creación destructor, visual
+        // Inicializar un destructor con las dimensiones correspondientes
+        Figures destructor = new Figures(50 * 2, 50, "destroyer", isVertical); // Usar tamaño basado en casillas
         contenedorDestroyer1.getChildren().add(destructor);
 
+        // Inicializa el tablero con los contenedores correspondientes
         tableroAliado = new TableroAliado(contenedorBarco1, contenedorSubmarino1, contenedorAircraft1, contenedorDestroyer1, boardGridPane);
 
-        //se mandan los objetos al tablero del aliado
-        //Event handler para el topgglebutton
+        // Mandar los objetos al tablero del aliado
+        // Event handler para el ToggleButton
         updateToggleButtonText();
     }
+
 
     @FXML
     private void toggleOrientation() {
