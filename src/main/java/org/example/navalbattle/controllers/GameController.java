@@ -28,42 +28,64 @@ import static org.example.navalbattle.model.TableroAliado.GRID_ROWS;
  */
 public class GameController {
 
-    /** Jugador actual del juego. */
+    public Button startGameButton;
+    public Button fireButton;
+    /**
+     * Jugador actual del juego.
+     */
     private Player player;
 
-    /** Etiqueta para mostrar el apodo del jugador. */
+    /**
+     * Etiqueta para mostrar el apodo del jugador.
+     */
     @FXML
     private Label nicknameLabel;
 
-    /** Contenedores de los barcos del jugador. */
+    /**
+     * Contenedores de los barcos del jugador.
+     */
     @FXML
-    private Pane contenedorBarco1, contenedorSubmarino1, contenedorAircraft1,contenedorDestroyer1;
+    private Pane contenedorBarco1, contenedorSubmarino1, contenedorAircraft1, contenedorDestroyer1;
 
-    /** Tableros del jugador y de la máquina. */
+    /**
+     * Tableros del jugador y de la máquina.
+     */
     @FXML
     private GridPane boardGridPane;
     @FXML
     private GridPane machineBoardGridPane;
 
-    /** Botón de verificación de la flota de la máquina. */
+    /**
+     * Botón de verificación de la flota de la máquina.
+     */
     @FXML
     private Button machineGameVerification;
 
-    /** Indica si la flota de la máquina ha sido revelada. */
+    /**
+     * Indica si la flota de la máquina ha sido revelada.
+     */
     private boolean machineRevealed = false;
 
-    /** Botón para alternar entre orientación vertical y horizontal de los barcos. */
+    /**
+     * Botón para alternar entre orientación vertical y horizontal de los barcos.
+     */
     @FXML
     private ToggleButton verticalHorizontal;
 
 
-    /** Indica si los barcos se colocan en posición vertical. */
+    /**
+     * Indica si los barcos se colocan en posición vertical.
+     */
     private boolean isVertical = false;
 
-    /** Tablero aliado del jugador. */
+    /**
+     * Tablero aliado del jugador.
+     */
     private TableroAliado tableroAliado;
 
-    /** Flota de la máquina. */
+    /**
+     * Flota de la máquina.
+     */
     private List<Figures> machineFleet = new ArrayList<>();
 
 
@@ -305,19 +327,27 @@ public class GameController {
     }
 
     /**
-     * Muestra el tablero de la maquina.
+     * Muestra visualmente los barcos de la máquina en su tablero.
      */
-
     private void mostrarTableroMaquina() {
         for (Node node : machineBoardGridPane.getChildren()) {
-            Button cell = (Button) node;
-            String shipType = (String) cell.getUserData();  // Obtener el tipo de barco desde los datos del botón
-            if (shipType != null) {
-                // Cambiar el estilo para mostrar los barcos de forma clara
-                cell.setStyle("-fx-background-color: gray; -fx-border-color: black; -fx-border-width: 2;");
-                // agregar más detalles visuales aquí si es necesario, como un texto que indique el tipo de barco
-                cell.setText(shipType);
+            if (node instanceof Button) {  // Verifica que el nodo sea un botón
+                Button cell = (Button) node;
+                String shipType = (String) cell.getUserData();  // Obtener el tipo de barco desde los datos del botón
+                if (shipType != null) {
+                    // Cambiar el estilo para destacar los barcos en el tablero
+                    cell.setStyle("-fx-background-color: lightblue; -fx-border-color: black; -fx-border-width: 2;");
+                }
             }
         }
+    }
+
+
+    public void onActionStarGameButton(ActionEvent actionEvent) {
+        //
+    }
+
+    public void onActionFireButton(ActionEvent actionEvent) {
+        //
     }
 }
