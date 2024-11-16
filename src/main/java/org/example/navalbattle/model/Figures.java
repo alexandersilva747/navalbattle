@@ -1,31 +1,82 @@
 package org.example.navalbattle.model;
 
+/**
+ * Represents a ship figure in the Naval Battle game.
+ * This class handles the visual representation of the ship, including its type,
+ * orientation, and size in cells.
+ *
+ * Implements {@link Serializable} to allow saving and loading game state.
+ *
+ * Note: Serialization of this class does not include the image resources.
+ * These resources must be reloaded when deserializing the object.
+ *
+ * @author Estudiantes: Lady Vanessa Matabanchoy Lasso 2370571
+ *  * Sebastian Orejuela Albornoz 2242232
+ *  * Olman Alexander Silva Zuñiga 2343025
+ * @version 1.0
+ */
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.image.Image;
 import javafx.scene.paint.Color;
 
+import java.io.Serializable;
+
 import static org.example.navalbattle.model.TableroAliado.CELL_HEIGHT;
 import static org.example.navalbattle.model.TableroAliado.CELL_WIDTH;
 
-public class Figures extends Canvas {
-    private Image backgroundImage;
-    private String tipo;
-    private Image image;
-    private boolean isVertical;
-    private int casillas;  // Número de casillas que ocupa el barco
 
+public class Figures extends Canvas implements Serializable {
+
+    private static final long serialVersionUID = 1L;
+
+    /**
+     * The background image of the canvas (not serialized).
+     */
+    private transient Image backgroundImage;
+
+    /**
+     * The type of the ship (e.g., fragata, submarino).
+     */
+    private String tipo;
+
+    /**
+     * The ship's image (not serialized).
+     */
+    private transient Image image;
+
+    /**
+     * Whether the ship is oriented vertically.
+     */
+    private boolean isVertical;
+
+    /**
+     * The number of cells the ship occupies.
+     */
+    private int casillas;
+
+    /**
+     * Constructs a new {@code Figures} object.
+     *
+     * @param width the width of the canvas
+     * @param height the height of the canvas
+     * @param tipo the type of the ship
+     * @param isVertical whether the ship is oriented vertically
+     */
     public Figures(double width, double height, String tipo, boolean isVertical) {
         super(width, height);
         this.tipo = tipo;
         this.isVertical = isVertical;
-        this.casillas = getCasillasForType(tipo);  // Asigna el número de casillas según el tipo de barco
+        this.casillas = getCasillasForType(tipo); // Assign the number of cells based on ship type
         backgroundImage = new Image(getClass().getResource("/org/example/navalbattle/images/aaaa.png").toExternalForm());
         setImageForShipType();
         ajustarCanvas();
         dibujarBarco();
     }
 
+    /**
+     * Sets the image for the ship based on its type.
+     */
     private void setImageForShipType() {
         switch (tipo) {
             case "fragata":
@@ -43,51 +94,66 @@ public class Figures extends Canvas {
         }
     }
 
+    /**
+     * Returns the number of cells the ship occupies based on its type.
+     *
+     * @param tipo the type of the ship
+     * @return the number of cells the ship occupies
+     */
     private int getCasillasForType(String tipo) {
         switch (tipo) {
-            case "fragata": return 1;       // Fragata ocupa 1 casilla
-            case "submarino": return 3;     // Submarino ocupa 3 casillas
-            case "aircraft": return 4;      // Portaaviones ocupa 4 casillas
-            case "destroyer": return 2;     // Destructor ocupa 2 casillas
-            default: return 1;              // Valor predeterminado en caso de error
+            case "fragata": return 1;
+            case "submarino": return 3;
+            case "aircraft": return 4;
+            case "destroyer": return 2;
+            default: return 1;
         }
     }
 
-    // Metodo que devuelve la longitud del barco (en casillas)
+    /**
+     * Returns the length of the ship in cells.
+     *
+     * @return the length of the ship
+     */
     public int getLength() {
         return casillas;
     }
 
-    // Metodo que devuelve el nombre del barco (tipo)
+    /**
+     * Returns the name (type) of the ship.
+     *
+     * @return the name of the ship
+     */
     public String getName() {
         return tipo;
     }
 
+    /**
+     * Adjusts the canvas size based on the ship's orientation and type.
+     */
     private void ajustarCanvas() {
-// Ajusta el ancho y el alto en función de la orientación y el número de casillas de cada tipo de barco
         if (isVertical) {
-            setWidth(CELL_WIDTH); // Ancho de una casilla en orientación vertical
-            setHeight(CELL_HEIGHT * casillas); // Altura total en función de las casillas en orientación vertical
+            setWidth(CELL_WIDTH);
+            setHeight(CELL_HEIGHT * casillas);
         } else {
-            setWidth(CELL_WIDTH * casillas); // Ancho total en función de las casillas en orientación horizontal
-            setHeight(CELL_HEIGHT); // Altura de una casilla en orientación horizontal
+            setWidth(CELL_WIDTH * casillas);
+            setHeight(CELL_HEIGHT);
         }
-
     }
 
-
-
+    /**
+     * Draws the ship on the canvas.
+     */
     private void dibujarBarco() {
-        ajustarCanvas();  // Ajusta el tamaño del Canvas antes de dibujar
+        ajustarCanvas(); // Adjust canvas size before drawing
         GraphicsContext gc = this.getGraphicsContext2D();
-        gc.clearRect(0, 0, getWidth(), getHeight());  // Limpiar el Canvas antes de dibujar
+        gc.clearRect(0, 0, getWidth(), getHeight()); // Clear canvas before drawing
         gc.setFill(Color.LIGHTSKYBLUE);
-        //gc.drawImage(backgroundImage, 0, 0, getWidth(), getHeight());
 
         if (isVertical) {
             gc.save();
-            gc.translate(getWidth() / 2, getHeight() / 2); // Se traslada para girar
-            gc.rotate(90); // Gira la imagen para que se muestre en vertical
+            gc.translate(getWidth() / 2, getHeight() / 2); // Center for rotation
+            gc.rotate(90); // Rotate for vertical orientation
             gc.drawImage(image, -getHeight() / 2, -getWidth() / 2, getHeight(), getWidth());
             gc.restore();
         } else {
@@ -95,9 +161,13 @@ public class Figures extends Canvas {
         }
     }
 
-
+    /**
+     * Sets the orientation of the ship.
+     *
+     * @param isVertical whether the ship should be vertical
+     */
     public void setVertical(boolean isVertical) {
         this.isVertical = isVertical;
-        dibujarBarco();  // Redibujar el barco con la nueva orientación
+        dibujarBarco(); // Redraw the ship with the new orientation
     }
 }
