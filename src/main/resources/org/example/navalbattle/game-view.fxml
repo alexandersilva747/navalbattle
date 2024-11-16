@@ -143,7 +143,7 @@
             </VBox>
             <VBox alignment="CENTER" prefHeight="520.0" prefWidth="210.0">
                <children>
-                  <Button alignment="TOP_CENTER" mnemonicParsing="false" prefHeight="15.0" prefWidth="180.0" styleClass="button_start" text="Start Game">
+                  <Button fx:id="startGameButton" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#onActionStarGameButton" prefHeight="15.0" prefWidth="180.0" styleClass="button_start" text="Start Game">
                      <font>
                         <Font size="16.0" />
                      </font>
@@ -151,7 +151,7 @@
                         <Insets bottom="50.0" />
                      </VBox.margin>
                   </Button>
-                  <Button alignment="TOP_CENTER" mnemonicParsing="false" prefHeight="15.0" prefWidth="180.0" styleClass="button_again" text="Fire" textFill="#171717">
+                  <Button fx:id="fireButton" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#onActionFireButton" prefHeight="15.0" prefWidth="180.0" styleClass="button_again" text="Fire" textFill="#171717">
                      <font>
                         <Font size="16.0" />
                      </font>
