@@ -19,8 +19,8 @@ public class TableroAliado {
 
     public static final int CELL_WIDTH = 35;
     public static final int CELL_HEIGHT = 40;
-    private static final int GRID_COLUMNS = 10;
-    private static final int GRID_ROWS = 10;
+    public static final int GRID_COLUMNS = 10;
+    public static final int GRID_ROWS = 10;
 
     public TableroAliado(Pane contenedorBarco1, Pane contenedorSubmarino1, Pane contenedorAircraft, Pane contenedorDestroyer, GridPane boardGridPane) {
         this.contenedorBarco1 = contenedorBarco1;
