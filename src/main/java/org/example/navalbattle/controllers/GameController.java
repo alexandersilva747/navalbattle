@@ -49,12 +49,15 @@ public class GameController {
     @FXML
     private ToggleButton verticalHorizontal;
 
+
+
     private boolean isVertical = false;
 
     private TableroAliado tableroAliado;
 
     //Barcos de la maquina
     private List<Figures> machineFleet = new ArrayList<>();
+
 
 
     public void initialize() {
@@ -75,12 +78,21 @@ public class GameController {
         Figures destructor = new Figures(50 * 2, 50, "destroyer", isVertical); // Usar tamaño basado en casillas
         contenedorDestroyer1.getChildren().add(destructor);
 
-        // Inicializa el tablero con los contenedores correspondientes
+        // Inicializar el tablero con los contenedores correspondientes
         tableroAliado = new TableroAliado(contenedorBarco1, contenedorSubmarino1, contenedorAircraft1, contenedorDestroyer1, boardGridPane);
+
 
         // Mandar los objetos al tablero del aliado
         // Event handler para el ToggleButton
         updateToggleButtonText();
+
+//          Comprobación que va en en start button
+//        if (tableroAliado.todosLosBarcosColocados()) {
+//            System.out.println("La colocación de barcos está completa.");
+//            tableroAliado.imprimirPosicionesBarcos();
+//        } else {
+//            System.out.println("Aún quedan barcos por colocar.");
+//        }
 
         //configurar flota de la maquina
         machineFleet.add(new Figures(50, 50, "fragata", isVertical));
@@ -88,10 +100,10 @@ public class GameController {
         machineFleet.add(new Figures(50 * 4, 50, "aircraft", isVertical));
         machineFleet.add(new Figures(50 * 2, 50, "destroyer", isVertical));
 
-        //coloca los barcos de la máquina aleatoriamente
+        //colocar los barcos de la máquina aleatoriamente
         placeMachineFleet();
 
-        // Configura el botón de verificación de la flota de la máquina
+        // Configurar el botón de verificación de la flota de la máquina
         machineGameVerification.setOnAction(e -> handleMachineGameVerification());
     }
 
@@ -235,18 +247,14 @@ public class GameController {
     private void mostrarTableroMaquina() {
         for (Node node : machineBoardGridPane.getChildren()) {
             Button cell = (Button) node;
-            String shipType = (String) cell.getUserData();  // Obtén el tipo de barco desde los datos del botón
+            String shipType = (String) cell.getUserData();  // Obtener el tipo de barco desde los datos del botón
             if (shipType != null) {
-                // Cambia el estilo para mostrar los barcos de forma clara
+                // Cambiar el estilo para mostrar los barcos de forma clara
                 cell.setStyle("-fx-background-color: gray; -fx-border-color: black; -fx-border-width: 2;");
-                // Puedes agregar más detalles visuales aquí si lo deseas, como un texto que indique el tipo de barco
+                // agregar más detalles visuales aquí si es necesario, como un texto que indique el tipo de barco
                 cell.setText(shipType);
             }
         }
     }
-
-
-
-
 
 }
