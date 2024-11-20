@@ -20,7 +20,9 @@ import javafx.scene.Node;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 
 public class TableroAliado implements Serializable {
@@ -45,6 +47,10 @@ public class TableroAliado implements Serializable {
     // List to track placed ships
     private List<ShipPlacement> placedShips = new ArrayList<>();
 
+    //Estructura para rastrear los impactos en los barcos de la maquina
+    private Map<String, Integer> machineShipsHits = new HashMap<>();
+
+
     /**
      * Constructor for TableroAliado.
      *
@@ -66,12 +72,12 @@ public class TableroAliado implements Serializable {
      * Represents the placement of a ship on the board.
      */
     public class ShipPlacement {
-        String type;
-        int col;
-        int row;
+        public String type;
+        public int col;
+        public int row;
         boolean isVertical;
-        int endCol; // Nueva variable para la columna final
-        int endRow; // Nueva variable para la fila final
+        public int endCol; // Nueva variable para la columna final
+        public int endRow; // Nueva variable para la fila final
 
         /**
          * Constructor for ShipPlacement.
@@ -323,5 +329,80 @@ public class TableroAliado implements Serializable {
             System.out.println("Tipo: " + ship.type + ", ColumnaI: " + ship.col + ", FilaI: " + ship.row + ", ColumnaF: "+ship.endCol + ", FilaF: "+ ship.endRow + ", Vertical: " + ship.isVertical);
         }
     }
+
+
+    //logica para desarrollo del juego de disparos
+
+    /**
+     * Verifica si una celda específica contiene parte de un barco.
+     *
+     * @param col Columna de la celda.
+     * @param row Fila de la celda.
+     * @return El tipo de barco si hay uno en la celda, o null si está vacío.
+     */
+    public String getShipAtPosition(int col, int row) {
+        for (ShipPlacement ship : placedShips) {
+            if (ship.isVertical) {
+                if (col == ship.col && row >= ship.row && row <= ship.endRow) {
+                    return ship.type;
+                }
+            } else {
+                if (row == ship.row && col >= ship.col && col <= ship.endCol) {
+                    return ship.type;
+                }
+            }
+        }
+        return null;
+    }
+
+    /**
+     * Obtiene todas las posiciones de los barcos.
+     *
+     * @return Lista de ShipPlacement.
+     */
+    public List<ShipPlacement> getPlacedShips() {
+        return placedShips;
+    }
+
+    // Mapa para llevar un registro de los golpes en cada barco
+    private Map<String, Integer> shipHits = new HashMap<>();
+
+    /**
+     * Registra un golpe en un barco específico.
+     *
+     * @param shipType Tipo de barco.
+     */
+    public void registerHit(String shipType) {
+        shipHits.put(shipType, shipHits.getOrDefault(shipType, 0) + 1);
+    }
+
+    /**
+     * Verifica si un barco ha sido hundido.
+     *
+     * @param shipType Tipo de barco.
+     * @return true si el barco está hundido, false en caso contrario.
+     */
+    public boolean isShipSunk(String shipType) {
+        int hits = shipHits.getOrDefault(shipType, 0);
+        int requiredHits = getShipLength(shipType);
+        return hits >= requiredHits;
+    }
+
+    /**
+     * Obtiene la longitud de un barco basado en su tipo.
+     *
+     * @param shipType Tipo de barco.
+     * @return Longitud del barco.
+     */
+    private int getShipLength(String shipType) {
+        return switch (shipType) {
+            case "fragata" -> 1;
+            case "submarino" -> 3;
+            case "aircraft" -> 4;
+            case "destroyer" -> 2;
+            default -> 1;
+        };
+    }
+
 
 }

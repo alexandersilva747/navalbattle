@@ -151,6 +151,7 @@
                         <Insets bottom="50.0" />
                      </VBox.margin>
                   </Button>
+                  <Label fx:id="avisosLabel" prefHeight="83.0" prefWidth="178.0" textAlignment="CENTER" wrapText="true" />
                   <Button fx:id="fireButton" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#onActionFireButton" prefHeight="15.0" prefWidth="180.0" styleClass="button_again" text="Fire" textFill="#171717">
                      <font>
                         <Font size="16.0" />
