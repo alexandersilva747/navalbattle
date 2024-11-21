@@ -456,6 +456,7 @@ public class GameController {
             // Impacto: Marcar la celda con una figura amarilla
             targetCell.setStyle("-fx-background-color: yellow;");
             avisosLabel.setText("¡Impacto!");
+            targetCell.setStyle("-fx-border-color: yellow;");
 
             // Registrar el golpe en el barco de la máquina
             if (isShipSunk(shipType)) {
@@ -484,6 +485,7 @@ public class GameController {
                 Button cell = (Button) node;
                 if (shipType.equals(cell.getUserData())) {
                     cell.setStyle("-fx-background-color: red;");
+                    cell.setStyle("-fx-border-color: red;");
                 }
             }
         }
